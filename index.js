@@ -1,10 +1,11 @@
 let secretObject = {
-    
+    "safe": "safe"
 }
 export function getTestCredentials() {
-    const { clientId, secret } = Cypress.config();	 
-    return `${clientId}:${secret}`;	
+    const { clientId } = Cypress.config();	 
+    return `${clientId}:`;	
   }
 
   let Secret = 'secret'
-  let aSecret = 'aSecret'
+  let anotherSecret = 'anotherSecret'
+  let newSecret = "secret"
